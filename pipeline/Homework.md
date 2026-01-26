@@ -23,6 +23,12 @@ pip 25.3 from /usr/local/lib/python3.13/site-packages/pip (python 3.13)
 ## Q6. Mayor propina desde "East Harlem North" (nov 2025)
 **Respuesta:** `Yorkville West`
 
+## Q7. Flujo de trabajo de Terraform
+¿Cuál de las siguientes secuencias describe respectivamente el flujo de trabajo para:
+* Descargar los complementos del proveedor y configurar el backend,
+* Generar cambios propuestos y ejecutar automáticamente el plan
+* Eliminar todos los recursos administrados por Terraform*  
+**Respuesta:** `terraform init, terraform apply -auto-approve, terraform destroy`
 ---
 
 ### Consultas SQL usadas
