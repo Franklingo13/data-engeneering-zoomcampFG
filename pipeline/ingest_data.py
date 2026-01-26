@@ -76,9 +76,3 @@ def run(pg_user, pg_pass, pg_host, pg_port, pg_db, target_table):
 
 if __name__ == '__main__':
     run()
-
-
-
-
-
-
