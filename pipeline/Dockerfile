@@ -11,12 +11,12 @@ WORKDIR /app
 ENV PATH="/app/.venv/bin:$PATH"
 
 # Copia primero los archivos de dependencias (mejor caché de capas)
-COPY "pyproject.toml" "uv.lock" ".python-version" ./
+COPY pyproject.toml .python-version uv.lock ./
 # Instala las dependencias desde el archivo lock (asegura compilaciones reproducibles)
 RUN uv sync --locked
 
 # Copia el código de la aplicación
-COPY pipeline.py pipeline.py
+COPY ingest_data.py .
 
 # Establece el punto de entrada
-ENTRYPOINT ["uv", "run", "python", "pipeline.py"]
+ENTRYPOINT ["uv", "run", "python", "ingest_data.py"]
