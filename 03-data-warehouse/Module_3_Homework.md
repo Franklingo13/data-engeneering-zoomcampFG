@@ -121,11 +121,3 @@ FROM zoomcamp.yellow_tripdata_parquet
 > ¿Cuántos bytes estima que se leerán? ¿Por qué?
 
 El número estimado de bytes es 0 B y la razón es que en las tablas materializadas, BigQuery ya mantiene el conteo de registros como parte de los metadatos de la tabla. Si agregáramos un filtro, obtendríamos una cantidad de bytes distinta de cero.
-
-Por ejemplo, la estimación de bytes procesados para esta otra consulta es 155.12 MB.
-
-```sql
-SELECT COUNT(*)
-FROM zoomcamp.yellow_tripdata_parquet
-WHERE VendorID = 2
-```
