@@ -10,7 +10,7 @@
 SELECT COUNT(*) FROM zoomcamp.yellow_tripdata_parquet
 ```
 
-- **20,332,093**
+- **20 332 093**
 
 ## Pregunta 2. Estimación de lectura de datos
 
@@ -52,7 +52,7 @@ SELECT PULocationID, DOLocationID FROM zoomcamp.yellow_tripdata_parquet
 SELECT COUNT(*) FROM zoomcamp.yellow_tripdata_parquet WHERE fare_amount = 0
 ```
 
-- **8,333**
+- **8 333**
 
 ## Pregunta 5. Particionado y clustering
 
