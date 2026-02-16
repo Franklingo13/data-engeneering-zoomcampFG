@@ -5,3 +5,10 @@ logs/
 
 # Data directory
 data/
+
+# Database files (heavy files)
+*.duckdb
+*.duckdb.wal
+*.db
+*.sqlite
+*.sqlite3
